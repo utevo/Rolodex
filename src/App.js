@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardList cards={this.state.users} />
+        <CardList users={this.state.users} />
       </div>
     );
   }
