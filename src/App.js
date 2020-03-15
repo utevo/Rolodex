@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import { CardList } from './components/card-list/card-list.component'
 import './App.css';
 
 class App extends Component {
@@ -18,6 +20,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <CardList xd="2">
+          <h1>Children of CardList</h1>
+        </CardList>
           {
             this.state.users.map(user => (
             <h1 key={user.id}> {user.name} </h1>
