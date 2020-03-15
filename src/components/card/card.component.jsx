@@ -1,10 +1,11 @@
 import React from 'react';
 
+import './card.style.css';
 
 export const Card = (props) => {
     console.log(props)
     return (
-        <div>
+        <div className='card'>
             <h1 id={props.key}> {props.user.name} </h1>
         </div>
     )
