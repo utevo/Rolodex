@@ -5,22 +5,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      athletes: []
+      users: []
     }
   }
 
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
-    .then(athletes => this.setState({athletes}))
+    .then(users => this.setState({users}))
   }
 
   render() {
     return (
       <div className="App">
           {
-            this.state.athletes.map(athlete => (
-            <h1 key={athlete.id}> {athlete.name} </h1>
+            this.state.users.map(user => (
+            <h1 key={user.id}> {user.name} </h1>
           ))}
       </div>
     );
