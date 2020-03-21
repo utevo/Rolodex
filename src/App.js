@@ -34,9 +34,9 @@ class App extends Component {
     );
     return (
       <div className="App">
-        <h1> Roledex </h1>
+        <h1> ROLODEX </h1>
         <SearchBox
-          placeHolder='Search User' 
+          placeHolder='search user' 
           onChange={this.handleChange}
         />
         <CardList users={filteredUsers} />

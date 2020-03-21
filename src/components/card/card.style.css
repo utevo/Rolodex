@@ -1,8 +1,8 @@
 .card {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
-    border: 10px solid 	#800080;
+    background-color: #FAE6FA ;
+    border: 1px solid 	#800080;
     border-radius: 10px;
     padding: 25px;
     
@@ -14,9 +14,16 @@
 }
 
 .card h1 {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+    text-shadow: none;
+}
+
+.card p {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
     text-shadow: none;
 }
 
